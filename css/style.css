@@ -41,6 +41,7 @@ a.skip:focus {
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 2fr 2fr 1fr;
+    row-gap: 10%;
 }
 
 #intro,
@@ -56,7 +57,25 @@ a.skip:focus {
 #designs,
 #research {
     grid-column: 2 / span 2;
-    grid-row: auto / span 1;
+}
+
+#spoti_img,
+#spoti_text {
+    grid-row: 3 / span 1;
+}
+
+#spoti_img,
+#ng_img,
+#user_flow_img,
+#ux_report_img {
+    grid-column: 2 / span 1;
+}
+
+#spoti_text,
+#ng_text,
+#user_flow_text,
+#ux_report_text {
+    grid-column: 3 / span 1;
 }
 
 #intro,
