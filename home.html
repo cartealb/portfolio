@@ -5,7 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>AJ Carter</title>
 </head>
 
@@ -14,81 +17,119 @@
     <header>
 
 
-        <nav>
-            <ul>
-                <li><a href="/" title="Go Home">AJ Carter</a></li>
-                <li><a href="projects.html" title="Projects">Projects</a></li>
-                <li><a href="about.html" title="About">About Me</a></li>
 
-            </ul>
-
-        </nav>
 
 
     </header>
-    <main>
+    <main id="skip">
+        <button onclick="go_to_topFunction()" id="top_button" title="Go to top">&uarr;</button>
         <div class="grid-container">
             <div id='intro'>
-                <h1>AJ Carter</h1>
+                <img id='me_pic' src='images/me.jpg' alt='Picture of AJ Carter' />
+                <div id='title_me'>
+                    <h1 id="me">Hi, I'm <span id="aj_h1">AJ Carter</span></h1>
+                </div>
 
-                <p>Hey, thanks for checking out my website! My name is AJ Carter and I value perspectives. I’m a junior at the University of Michigan studying Information with an Anthropology minor. I’m passionate about understanding people, their stories,
-                    and how technology can use these stories to build a better future.
-                </p>
             </div>
+
+            <nav id="nav_bar">
+                <ul>
+                    <li><a href="home.html" title="My skills and experience">Experience & Skills</a></li>
+                    <li><a href="about.html" title="Learn about me">Who am I?</a></li>
+                    <li><a href="designs.html" title="View my designs">Designs</a></li>
+
+
+                </ul>
+
+            </nav>
+
 
             <div id='projects'>
-                <h2>Projects</h2>
+                <h1>Experience & Skills</h1>
             </div>
 
 
-            <div id='spoti_text'>
-                <a href="spotistats.html" alt='More informaion on SpotiStats'>
-                    <h1>SpotiStats</h1>
+            <div data-aos="fade-in" data-aos-duration="1200" id='web_text'>
+
+                <h2 id="web_dev_h2">Web Development</h2>
+
+                <p>In the summer of 2019, I interned at Northrop Grumman as a Cyber Systems Engineer in San Antonio, Texas. My work was primarily focused on building and refining the UI of a web application. I worked closely with our site's UX Researcher
+                    to conduct usability evaultions and implemented UX design recommendations into the project. As a side project, I created the Spoti Stats web app which displays Spotify listening trends to the user.</p>
+
+                <h3 class='skills'>Skills</h3>
+                <ul>
+                    <li>HTML/CSS/JavaScript experience.</li>
+                    <li>Developing web applications using Django framework.</li>
+                    <li>Experience working with APIs.</li>
+                    <li>Implementing web accessibility from the start of a project.</li>
+                </ul>
+                <p id='spotistats'></p>
+                <a class="button" href="https://spotistats.pw" target="_blank">Spoti Stats Web App</a>
+
+            </div>
+            <div id='web_img'>
+                <img src='images/ng.png' alt='Northrop Grumman Logo' />
+            </div>
+
+
+            <div data-aos="fade-in" data-aos-duration="1200" id='ux_text'>
+                <h2 id="ux_h2">UX Research & Design</h2>
+                <p>I'm passionate about creating products with the user at the center. I believe fusing UX design principles with enginnering results in some of the best products. Through my internship and research experience, I have had the opportunity
+                    to apply UX design/research methods to actual products.</p>
+
+                <h3 class='skills'>Skills</h3>
+                <ul>
+                    <li>Conducted usability evaluations that brought insights on features not working as expected.</li>
+                    <li>Card sorting experience that led to restructuring a website's site architecture.</li>
+                    <li>Heuristic evaluations that informed design recommendations.</li>
+                    <li>Writing quality research reports that summarized findings and recommendations for key stakeholders.</li>
+                    <li>Writing clear and consise documentation for python libraries and the UI for a web application.</li>
+                </ul>
+                <p id='spotistats'></p>
+                <a class="button" href="https://drive.google.com/file/d/1t3eJQr3Dgi9tN-JrFOlFRjklhYy1zP8C/view?usp=sharing" target="_blank">UX Research Report</a>
+
+            </div>
+
+            <div id='ux_img'>
+                <a href="https://drive.google.com/file/d/1t3eJQr3Dgi9tN-JrFOlFRjklhYy1zP8C/view?usp=sharing" target="_blank">
+                    <img src='images/ux_icon.png' alt='UX research report image' />
                 </a>
-                <p>What is Spoti Stats? No more having to wait to the end of the year for your Spotify Unwrapped. This web app is a fun way to check your own listening trends on your own terms. It's built using the Spotify API to scrape user listening data.
-                    Currently, Spoti Stats is able to grab your top tracks and top artists within three different time intervals (short term, medium term, and long term listening histor</p>
-            </div>
-            <div id='spoti_img'>
-                <a href="spotistats.html" alt=''><img src='images/spotistat.jpg' alt='SpotiStats UI' /></a>
             </div>
 
 
-            <div id='ng_text'>
-                <header>Northrop Grumman Usability Test</header>
-            </div>
-            <div id='ng_img'>
-                <img src='images/calico.jpg' alt='Calico logo' />
+            <div data-aos="fade-in" data-aos-duration="1200" id='research_text'>
+                <h2 id="research_h2">Research</h2>
+                <p>I'm interested in learning about how technologies and social media platforms can be leveraged to create positive impacts in people's lives. My research interests are LGBTQ+, social media, human-computer interaction, and sociocultural anthropology.</p>
+                <h3 class='skills'>Skills</h3>
+                <ul>
+                    <li>Creating surveys, interviewing, qualitative coding, and affinity diagramming experience.</li>
+                    <li>I have qualitative and quantitative data analysis experience.</li>
+                    <li>I am currently on the Life Transitions and Social Media Project at the U-M School of Information.</li>
+                    <li>Co-authored on The Language of LGBTQ+ Minority Stress Experiences on Social Media.</li>
+                </ul>
+
+                <p id='spotistats'></p>
+                <a class="button" href="https://dl.acm.org/doi/abs/10.1145/3361108" alt='The Language of LGBTQ+ Minority Stress Experiences on Social Media article link' target="_blank">Publication Link</a>
+
             </div>
 
 
-            <div id='user_flow_text'>
-                <header>Twitter User Flow</header>
-            </div>
-            <div id='user_flow_img'>
-                <img src='images/user_flow.jpg' alt='User flow screenshot' />
-            </div>
-
-
-            <div id='ux_report_text'>
-                <header>UX Reseach Report</header>
-            </div>
-            <div id='ux_report_img'>
-                <img src='images/ux_report.jpg' alt='UX report screenshot' />
+            <div id='research_img'>
+                <a href="https://dl.acm.org/doi/abs/10.1145/3361108" alt='' target="_blank">
+                    <img src='images/research_umich.png' alt='Research UM logo' />
+                </a>
             </div>
 
 
 
 
-
-
-            <div id='designs'>
-                <h2>Designs</h2>
-
-
-            </div>
-            <div id='research'>
-                <h2>Research</h2>
-            </div>
+            <footer>
+                <p>AJ Carter &copy;
+                    <script>
+                        document.write(new Date().getFullYear())
+                    </script>
+                </p>
+            </footer>
 
         </div>
 
@@ -96,10 +137,19 @@
 
 
 
-    <footer>
 
-        <p>AJ Carter <br/> &copy;</p>
-    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            disable: function() {
+                var val = window.matchMedia('(prefers-reduced-motion: reduce)');
+                return val.matches;
+            }
+        });
+    </script>
+
+    <script src="js/uxe.js"></script>
+
 
 
 

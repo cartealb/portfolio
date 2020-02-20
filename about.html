@@ -5,53 +5,101 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>AJ Carter</title>
 </head>
 
 <body>
+    <a class="skip" href="#skip">Skip to Main Content</a>
     <header>
 
 
-        <nav>
-            <ul>
-                <li><a href="home.html" title="Go Home">AJ Carter</a></li>
-                <li><a href="projects.html" title="Projects">Projects</a></li>
-                <li><a href="/" title="About">About Me</a></li>
 
-            </ul>
-
-        </nav>
 
 
     </header>
-
-
-
-    <main>
-        <h1>All About AJ Carter</h1>
-
-
+    <main id="skip">
         <div class="grid-container">
             <div id='intro'>
-                <h1>AJ Carter</h1>
+                <img id='me_pic' src='images/me.jpg' alt='Picture of AJ Carter' />
+                <div id='title_me'>
+                    <h1 id="me">Hi, I'm AJ Carter</h1>
+                </div>
+
 
             </div>
 
-            <div id='education'>
-                <h1>Education</h1>
+            <nav>
+                <ul>
+                    <li><a href="home.html" title="My skills and experience">Experience & Skills</a></li>
+                    <li><a href="about.html" title="Learn about me">Who am I?</a></li>
+                    <li><a href="designs.html" title="View my designs">Designs</a></li>
 
+
+                </ul>
+
+            </nav>
+
+
+            <div id='about'>
+                <h1>Who am I?</h1>
             </div>
 
-            <div id='passions'>
-                <h1>Passions and Hobbies</h1>
+
+            <div data-aos="fade-in" data-aos-duration="1200" id='debug_text'>
+                <h2>I’m an <span id="enth_debug">enthusiastic debugger</span></h2>
+                <p>I really enjoy the process of discovering, tracking down, and solving bugs.</p>
+                <h3 class='skills'>In Practice</h3>
+                <ul>
+                    <li>I utilize resources and tools to quickly identify and work through bugs.</li>
+                    <li>I emphasize teaching debugging and problem solving skills to students.</li>
+                    <li>Being an Instructor Assistant for Data Programming (SI 206), I trobleshoot and walk through code daily.</li>
+                </ul>
+            </div>
+            <div id='debug_img'>
+                <img src='images/debug.png' alt='debug icon' />
             </div>
 
-            <div id='contact'>
-                <h1>Contact Information</h1>
+            <div data-aos="fade-in" data-aos-duration="1200" id='learn_text'>
+                <h2>I'm a <span id="quick_learner">quick & motivated learner</span></h2>
+                <p>I can pick up skills fast. I'm good at identifying gaps in my knowledge and filling the gaps quickly.</p>
+                <h3 class='skills'>In Practice</h3>
+                <ul>
+                    <li>I learned Robot Framework and I created automated testing scripts within a week while at Northrop Grumman.</li>
+                    <li>I picked up Django last summer and I built my first web app.</li>
+                    <li>I learned most of my HTML/CSS skills outside the classroom.</li>
+                </ul>
+
+            </div>
+            <div id='learn_img'>
+                <img src='images/thinker.png' alt='light bulb icon' />
             </div>
 
 
+            <div data-aos="fade-in" data-aos-duration="1200" id='people_text'>
+                <h2>I'm a <span id='people_person'>people person</span></h2>
+                <p>I’m passionate about understanding people, their stories, and how technology can use these stories to build a better future.</p>
+                <h3 class='skills'>In Practice</h3>
+                <ul>
+                    <li>Through my Anthropology minor, I am trained to think about people and the identities they hold.</li>
+                    <li>As Resident Advisor, I use restorative practices to build community and to understand the needs of others.</li>
+                    <li>I am driven by projects and technologies that directly impact people.</li>
+                </ul>
+            </div>
+            <div id='people_img'>
+                <img src='images/people.png' alt='people holding hands icon' />
+            </div>
+
+            <footer>
+                <p>AJ Carter &copy;
+                    <script>
+                        document.write(new Date().getFullYear())
+                    </script>
+                </p>
+            </footer>
 
         </div>
 
@@ -60,10 +108,17 @@
 
 
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            disable: function() {
+                var val = window.matchMedia('(prefers-reduced-motion: reduce)');
+                return val.matches;
+            }
+        });
+    </script>
 
-
-
-
+    <script src="js/uxe.js"></script>
 
 
 </body>

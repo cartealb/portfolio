@@ -3,14 +3,238 @@ html {
 }
 
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     font-size: 16pt;
+    background-color: white;
 }
 
 img {
-    width: 30%;
+    width: 200px;
+    border-radius: 13%;
+}
+
+.button {
+    text-decoration: none;
+    background-color: rgba(238, 238, 238, 0.46);
+    color: black;
+    padding: 10px;
+    border-radius: 2%;
+    font-size: 17px;
+}
+
+#top_button {
+    display: none;
+    position: fixed;
+    bottom: 51px;
+    right: 20px;
+    outline: none;
+    border: none;
+    z-index: 99;
+    background-color: #4285F5;
+    color: white;
+    cursor: pointer;
+    border-radius: 8%;
+    font-size: 37px;
+}
+
+div * {
+    padding-top: 10px;
+}
+
+footer {
+    grid-row: 20 / span 1;
+    padding-top: 200px;
+    grid-column: 1 / span 4;
+    padding-top: 200px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-size: small;
+}
+
+li {
+    text-align: left;
+    padding-top: 0px;
+}
+
+#spotistats {
+    padding-top: 30px;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+
+/* Source https://css-tricks.com/books/fundamental-css-tactics/animate-text-like-typewriter/ */
+
+#me {
+    font-size: 28px;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .10em;
+    -webkit-animation: typing 2.5s steps(40, end), blink-caret .75s step-end infinite;
+    animation: typing 2.5s steps(40, end), blink-caret .75s step-end infinite;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+}
+
+#me_pic {
+    border-radius: 50%;
+    width: 250px;
+}
+
+@-webkit-keyframes alt_color {
+    0% {
+        color: #4285F5;
+    }
+    25% {
+        color: #EA4435;
+    }
+    50% {
+        color: #F9BB08;
+    }
+    75% {
+        color: #32A452;
+    }
+    100% {
+        color: #4285F5;
+    }
+}
+
+@keyframes alt_color {
+    0% {
+        color: #4285F5;
+    }
+    25% {
+        color: #EA4435;
+    }
+    50% {
+        color: #F9BB08;
+    }
+    75% {
+        color: #32A452;
+    }
+    100% {
+        color: #4285F5;
+    }
+}
+
+#aj_h1 {
+    color: #4285F5;
+    -webkit-animation: alt_color 30s infinite;
+    animation: alt_color 30s infinite;
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+}
+
+#enth_debug,
+#web_dev_h2 {
+    color: #4285F5
+}
+
+#quick_learner,
+#ux_h2 {
+    color: #32A452;
+}
+
+#people_person,
+#research_h2 {
+    color: #EA4435
+}
+
+#
+/* The typing effect */
+
+@-webkit-keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@-webkit-keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@-webkit-keyframes typing_des {
+    from {
+        width: 0;
+    }
+    to {
+        width: 50%;
+    }
+}
+
+@keyframes typing_des {
+    from {
+        width: 0;
+    }
+    to {
+        width: 50%;
+    }
+}
+
+
+/* The typewriter cursor effect */
+
+@-webkit-keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent
+    }
+    50% {
+        border-color: #4285F5;
+    }
+}
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent
+    }
+    50% {
+        border-color: #4285F5
+    }
+}
+
+#title_me {
+    display: -webkit-box;
+    display: flex;
+    padding-top: 50px;
+}
+
+.title {
+    font-size: 25px;
 }
 
 
@@ -40,57 +264,393 @@ a.skip:focus {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr 1fr;
-    row-gap: 10%;
+    grid-template-columns: 1fr 2fr 1fr;
+    row-gap: 0px;
 }
 
 #intro,
 #projects,
-#spoti_img,
-#spoti_text,
-#ng_text,
-#ng_img,
-#user_flow_text,
-#user_flow_img,
-#ux_report_text,
-#ux_report_img,
-#designs,
-#research {
-    grid-column: 2 / span 2;
-}
-
-#spoti_img,
-#spoti_text {
-    grid-row: 3 / span 1;
-}
-
-#spoti_img,
-#ng_img,
-#user_flow_img,
-#ux_report_img {
+#web_img,
+#web_text,
+#ux_text,
+#ux_img,
+#research_text,
+#research_img,
+#debug_text,
+#debug_img,
+#learn_text,
+#learn_img,
+#people_text,
+#people_img,
+#about,
+#designs {
     grid-column: 2 / span 1;
 }
 
-#spoti_text,
-#ng_text,
-#user_flow_text,
-#ux_report_text {
-    grid-column: 3 / span 1;
+nav {
+    grid-row: 2 / span 1;
+    grid-column: 2/ span 1;
+    border-left: solid #F9BB08;
+    margin: 0 auto;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav li {
+    padding-bottom: 10px;
+    margin-left: 30px;
+}
+
+nav li a:hover {
+    color: #F9BB08
+}
+
+#projects {
+    grid-row: 3 / span 1;
+}
+
+#web_text {
+    grid-row: 4 / span 1;
+}
+
+#web_img {
+    grid-row: 5 / span 1;
+}
+
+#ux_text {
+    grid-row: 6 / span 1;
+}
+
+#ux_img {
+    grid-row: 7 / span 1;
+}
+
+#research_text {
+    grid-row: 8 / span 1;
+}
+
+#research_img {
+    grid-row: 9 / span 1;
+}
+
+#about {
+    grid-row: 10 / span 1;
+}
+
+#debug_text {
+    grid-row: 11 / span 1;
+}
+
+#debug_img {
+    grid-row: 12 / span 1;
+}
+
+#learn_text {
+    grid-row: 13 / span 1;
+}
+
+#learn_img {
+    grid-row: 14 / span 1;
+}
+
+#people_text {
+    grid-row: 15 / span 1;
+}
+
+#people_img {
+    grid-row: 16 / span 1;
+}
+
+#designs {
+    grid-row: 17 / span 1;
+}
+
+#design_text {
+    grid-row: 18 / span 1;
+}
+
+#mygal {
+    grid-row: 19 / span 1;
+}
+
+#web_img,
+#ux_img,
+#research_img,
+#debug_img,
+#learn_img,
+#people_img {
+    grid-column: 2 / span 1;
+    row-gap: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#projects,
+#designs,
+#about {
+    grid-column: 1 / span 3;
+    padding: 20px 25px;
+    border-bottom: #4285F5 solid;
+    padding-top: 200px;
+}
+
+#projects {
+    padding-top: 215px;
+}
+
+#web_text {
+    padding-top: 20px;
 }
 
 #intro,
 #projects,
+#about,
 #designs,
-#research,
-#spoti_text,
-#ng_text,
-#user_flow_text,
-#ux_report_text {
+#web_text,
+#ux_text,
+#research_text,
+#debug_text,
+#learn_text,
+#people_text,
+#design_text {
     text-align: center;
 }
 
-# @media screen and (min-width:680px) {}
+#web_text p,
+#ux_text p,
+#research_text p,
+#debug_text p,
+#learn_text p,
+#people_text p {
+    text-align: center;
+}
 
-@media screen and (min-width:1024px) {}
+#spotistats {
+    text-align: center !important;
+}
 
-@media screen and (prefers-reduced-motion: reduce) {}
+#intro {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    grid-row: 1 / span 1;
+}
+
+.skills {
+    padding-top: 50px;
+}
+
+.gallery {
+    min-height: 600px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.gallery>img {
+    border: 10px;
+    margin: 10px;
+    width: 300px;
+}
+
+#image3,
+#image4,
+#image6 {
+    background-color: rgba(153, 153, 153, 0.568);
+}
+
+#mygal {
+    grid-column: 1/ span 4;
+}
+
+#mygal {
+    padding-top: 50px;
+}
+
+#web_text,
+#ux_text,
+#research_text,
+#debug_text,
+#learn_text,
+#people_text,
+#design_text {
+    grid-column: 2 / span 1;
+    padding-top: 65px;
+}
+
+@media screen and (min-width:767px) {
+    .grid-container {
+        grid-template-columns: 1fr 2fr 2fr 1fr;
+    }
+    #intro,
+    #projects,
+    #web_img,
+    #web_text,
+    #ux_text,
+    #ux_img,
+    #research_text,
+    #research_img,
+    #debug_text,
+    #debug_img,
+    #learn_text,
+    #learn_img,
+    #people_text,
+    #people_img,
+    #about,
+    #design_text,
+    #designs {
+        grid-column: 2 / span 2;
+    }
+    #web_img,
+    #ux_img,
+    #research_img,
+    #debug_img #learn_img,
+    #people_img {
+        grid-column: 2 / span 1;
+    }
+    #web_text,
+    #ux_text,
+    #research_text,
+    #debug_text,
+    #learn_text,
+    #people_text {
+        grid-column: 3 / span 1;
+        text-align: left;
+        padding-top: 100px;
+    }
+    #design_text {
+        grid-column: 2 / span 2;
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    #web_img,
+    #ux_img,
+    #research_img,
+    #debug_img,
+    #learn_img,
+    #people_img {
+        padding-top: 100px;
+        padding-top: 130px;
+        grid-column: 2 / span 1;
+    }
+    #web_img,
+    #web_text {
+        grid-row: 4 / span 1;
+    }
+    #ux_img,
+    #ux_text {
+        grid-row: 5 / span 1;
+    }
+    #research_text,
+    #research_img {
+        grid-row: 6 / span 1;
+    }
+    #about {
+        grid-row: 7 / span 1;
+    }
+    #debug_text,
+    #debug_img {
+        grid-row: 8 / span 1;
+    }
+    #learn_text,
+    #learn_img {
+        grid-row: 9 / span 1;
+    }
+    #people_text,
+    #people_img {
+        grid-row: 10 / span 1;
+    }
+    img {
+        width: 215px;
+    }
+    li {
+        list-style-position: inside;
+        text-indent: -1.4em;
+        padding-left: 1em;
+    }
+    #projects,
+    #designs,
+    #about {
+        border: none;
+        border-bottom: #4285F5 solid;
+    }
+    #projects {
+        padding-top: 275px;
+    }
+    #me {
+        font-size: 60px;
+        overflow: hidden;
+        /* Ensures the content is not revealed until the animation */
+        border-right: .15em solid orange;
+        /* The typwriter cursor */
+        white-space: nowrap;
+        /* Keeps the content on a single line */
+        margin: 0 auto;
+        /* Gives that scrolling effect as the typing happens */
+        letter-spacing: .10em;
+        -webkit-animation: typing_des 2s steps(40, end), blink-caret .75s step-end infinite;
+        animation: typing_des 2s steps(40, end), blink-caret .75s step-end infinite;
+    }
+    .skills {
+        text-align: left;
+    }
+    #spotistats {
+        text-align: left !important;
+    }
+    #web_text {
+        padding-top: 100px;
+    }
+    .gallery>img {
+        width: 600px;
+    }
+    #web_text p,
+    #ux_text p,
+    #research_text p,
+    #debug_text p,
+    #learn_text p,
+    #people_text p {
+        text-align: left;
+    }
+    footer {
+        grid-row: 40 / span 1;
+    }
+    nav {
+        grid-column: 2/ span 2;
+    }
+    #top_button {
+        font-size: 43px;
+        right: 54px;
+        bottom: 20px;
+    }
+    #top_button:hover {
+        background-color: rgba(238, 238, 238, 3.91);
+    }
+}
+
+@media screen and (min-width:1680px) {
+    #projects {
+        padding-top: 400px;
+    }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+    #me {
+        -webkit-animation: none;
+        animation: none;
+        border-right: none;
+    }
+    #aj_h1 {
+        -webkit-animation: none;
+        animation: none;
+    }
+}
