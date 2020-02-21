@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>AJ Carter</title>
+</head>
+
+<body>
+    <a class="skip" href="#skip">Skip to Main Content</a>
+    <header>
+
+
+
+
+
+    </header>
+    <main id="skip">
+        <button onclick="go_to_topFunction()" id="top_button" title="Go to top">&uarr;</button>
+        <div class="grid-container">
+            <div id='intro'>
+                <img id='me_pic' src='images/me.jpg' alt='Picture of AJ Carter' />
+                <div id='title_me'>
+                    <h1 id="me">Hi, I'm <span id="aj_h1">AJ Carter</span></h1>
+                </div>
+
+            </div>
+
+
+
+
+            <nav id="nav_bar">
+                <ul>
+                    <li><a href="home.html" title="My skills and experience">Experience & Skills</a></li>
+                    <li><a href="about.html" title="Learn about me">Who am I?</a></li>
+                    <li><a href="designs.html" title="View my designs">Designs</a></li>
+                    <li><a href="contact.html" title="Contact AJ">Contact</a></li>
+
+
+                </ul>
+
+            </nav>
+
+
+            <div id='projects'>
+                <h1>Contact</h1>
+            </div>
+
+
+            <div data-aos="fade-in" data-aos-duration="1200" id='social_media'>
+
+                <div id='fb_img'>
+                    <img src='images/facebook.png' alt='Facebook Logo' />
+                </div>
+                <div id='linked_img'>
+                    <img src='images/linkedin.png' alt='LinkedIn Logo' />
+                </div>
+                <div id='insta_img'>
+                    <img src='images/instagram.png' alt='Instagram Logo' />
+                </div>
+
+
+            </div>
+
+
+            <div data-aos="fade-in" data-aos-duration="1200" id='contact_form'>
+
+
+                <form action="https://formspree.io/mvoroqry" method="POST">
+                    <fieldset>
+                        <p id="form_title">Send me a message</p>
+                        <div class="form">
+                            <label for="name">Name:</label><input type="text" id="name" name="name" /><br>
+                            <label for="email">Email Address:</label><input type="text" id="email" name="email" /><br>
+                            <label for="addr">Message:</label><textarea id="addr" name="addr"></textarea>
+                            <input id='submit_button' type="submit" value="Submit Form" />
+                        </div>
+
+                    </fieldset>
+                </form>
+
+            </div>
+
+            <footer>
+                <p>AJ Carter &copy;
+                    <script>
+                        document.write(new Date().getFullYear())
+                    </script>
+                </p>
+            </footer>
+
+        </div>
+
+    </main>
+
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            disable: function() {
+                var val = window.matchMedia('(prefers-reduced-motion: reduce)');
+                return val.matches;
+            }
+        });
+    </script>
+
+    <script src="js/uxe.js"></script>
+
+
+</body>

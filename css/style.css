@@ -39,6 +39,74 @@ img {
     font-size: 37px;
 }
 
+input[type=reset],
+input[type=submit] {
+    text-decoration: none;
+    background-color: rgba(238, 238, 238, 0.46);
+    color: black;
+    padding: 10px;
+    border-radius: 2%;
+    font-size: 17px;
+}
+
+fieldset div {
+    background: rgba(238, 238, 238, 0.46);
+    margin: 2%;
+    padding: 1%;
+    border-radius: 5px;
+}
+
+fieldset {
+    padding-top: 100px;
+}
+
+fieldset label {
+    text-align: left;
+    padding-bottom: 10px;
+    font-size: medium;
+}
+
+#social_media {
+    display: grid;
+    grid-row: 4 / span 1;
+    grid-column: 2/ span 1;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 0px;
+}
+
+#contact_form {
+    grid-column: 2/ span 1;
+    grid-row: 5 / span 1;
+    text-align: center;
+}
+
+#fb_img,
+#insta_img,
+#linked_img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#social_media img {
+    width: 100px;
+}
+
+#submit_box {
+    border: none;
+}
+
+#submit_button {
+    margin-top: 50px;
+}
+
+#submit_button:hover {
+    background: rgba(238, 238, 238, 3);
+}
+
 div * {
     padding-top: 10px;
 }
@@ -635,11 +703,186 @@ nav li a:hover {
     #top_button:hover {
         background-color: rgba(238, 238, 238, 3.91);
     }
+    #contact_form {
+        grid-row: 5 / span 1;
+        grid-column: 2/ span 2;
+    }
+    #social_media {
+        padding-top: 100px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-row: 4 / span 1;
+        grid-column: 2/ span 2;
+    }
+    #form_title {
+        padding-top: 100px;
+        font-size: large;
+    }
 }
 
 @media screen and (min-width:1680px) {
     #projects {
         padding-top: 400px;
+    }
+    .grid-container {
+        grid-template-columns: 1fr 2fr 2fr 1fr;
+    }
+    #intro,
+    #projects,
+    #web_img,
+    #web_text,
+    #ux_text,
+    #ux_img,
+    #research_text,
+    #research_img,
+    #debug_text,
+    #debug_img,
+    #learn_text,
+    #learn_img,
+    #people_text,
+    #people_img,
+    #about,
+    #design_text,
+    #designs {
+        grid-column: 2 / span 2;
+    }
+    #web_img,
+    #ux_img,
+    #research_img,
+    #debug_img #learn_img,
+    #people_img {
+        grid-column: 2 / span 1;
+    }
+    #web_text,
+    #ux_text,
+    #research_text,
+    #debug_text,
+    #learn_text,
+    #people_text {
+        grid-column: 3 / span 1;
+        text-align: left;
+        padding-top: 100px;
+    }
+    #design_text {
+        grid-column: 2 / span 2;
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    #web_img,
+    #ux_img,
+    #research_img,
+    #debug_img,
+    #learn_img,
+    #people_img {
+        padding-top: 100px;
+        padding-top: 130px;
+        grid-column: 2 / span 1;
+    }
+    #web_img,
+    #web_text {
+        grid-row: 4 / span 1;
+    }
+    #ux_img,
+    #ux_text {
+        grid-row: 5 / span 1;
+    }
+    #research_text,
+    #research_img {
+        grid-row: 6 / span 1;
+    }
+    #about {
+        grid-row: 7 / span 1;
+    }
+    #debug_text,
+    #debug_img {
+        grid-row: 8 / span 1;
+    }
+    #learn_text,
+    #learn_img {
+        grid-row: 9 / span 1;
+    }
+    #people_text,
+    #people_img {
+        grid-row: 10 / span 1;
+    }
+    img {
+        width: 215px;
+    }
+    li {
+        list-style-position: inside;
+        text-indent: -1.4em;
+        padding-left: 1em;
+    }
+    #projects,
+    #designs,
+    #about {
+        border: none;
+        border-bottom: #4285F5 solid;
+    }
+    #projects {
+        padding-top: 275px;
+    }
+    #me {
+        font-size: 60px;
+        overflow: hidden;
+        /* Ensures the content is not revealed until the animation */
+        border-right: .15em solid orange;
+        /* The typwriter cursor */
+        white-space: nowrap;
+        /* Keeps the content on a single line */
+        margin: 0 auto;
+        /* Gives that scrolling effect as the typing happens */
+        letter-spacing: .10em;
+        -webkit-animation: typing_des 2s steps(40, end), blink-caret .75s step-end infinite;
+        animation: typing_des 2s steps(40, end), blink-caret .75s step-end infinite;
+    }
+    .skills {
+        text-align: left;
+    }
+    #spotistats {
+        text-align: left !important;
+    }
+    #web_text {
+        padding-top: 100px;
+    }
+    .gallery>img {
+        width: 600px;
+    }
+    #web_text p,
+    #ux_text p,
+    #research_text p,
+    #debug_text p,
+    #learn_text p,
+    #people_text p {
+        text-align: left;
+    }
+    footer {
+        grid-row: 40 / span 1;
+    }
+    nav {
+        grid-column: 2/ span 2;
+    }
+    #top_button {
+        font-size: 43px;
+        right: 54px;
+        bottom: 20px;
+    }
+    #top_button:hover {
+        background-color: rgba(238, 238, 238, 3.91);
+    }
+    #contact_form {
+        grid-row: 5 / span 1;
+        grid-column: 2/ span 2;
+    }
+    #social_media {
+        padding-top: 100px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-row: 4 / span 1;
+        grid-column: 2/ span 2;
+    }
+    #form_title {
+        padding-top: 100px;
+        font-size: large;
     }
 }
 
