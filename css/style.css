@@ -379,6 +379,10 @@ nav li a {
     color: black;
 }
 
+.nav_active {
+    color: #32A452;
+}
+
 nav li {
     padding-bottom: 10px;
     margin-left: 30px;
