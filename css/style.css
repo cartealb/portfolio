@@ -12,7 +12,6 @@ body {
 
 img {
     width: 200px;
-    border-radius: 13%;
 }
 
 .design_img {
@@ -885,6 +884,9 @@ nav li a:hover {
         width: 35%;
         margin: 50px;
         margin-top: 200px;
+    }
+    .design_img:hover {
+        transform: scale(1.1);
     }
     #web_text p,
     #ux_text p,
