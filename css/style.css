@@ -92,6 +92,15 @@ fieldset label {
 #linked_img {
     margin-left: auto;
     margin-right: auto;
+    padding: 15px;
+}
+
+#fb_img {
+    margin-top: 50px;
+}
+
+#insta_img {
+    margin-bottom: 50px;
 }
 
 #social_media img {
@@ -586,6 +595,11 @@ nav li a:hover {
     .grid-container {
         grid-template-columns: 1fr 2fr 2fr 1fr;
     }
+    #projects,
+    #designs,
+    #about {
+        padding-top: 275px;
+    }
     #intro,
     #projects,
     #web_img,
@@ -624,7 +638,7 @@ nav li a:hover {
     }
     #design_text {
         grid-column: 2 / span 2;
-        text-align: center;
+        text-align: left;
         padding-top: 100px;
         padding-bottom: 100px;
     }
@@ -713,6 +727,9 @@ nav li a:hover {
         margin: 50px;
         margin-top: 200px;
     }
+    .design_img:hover {
+        transform: scale(1.1);
+    }
     #web_text p,
     #ux_text p,
     #research_text p,
@@ -749,10 +766,21 @@ nav li a:hover {
         padding-top: 100px;
         font-size: large;
     }
+    #fb_img {
+        margin-top: 0px;
+    }
+    #insta_img {
+        margin-bottom: 0px;
+    }
 }
 
 @media screen and (min-width:1680px) {
     #projects {
+        padding-top: 400px;
+    }
+    #projects,
+    #designs,
+    #about {
         padding-top: 400px;
     }
     .grid-container {
@@ -796,7 +824,7 @@ nav li a:hover {
     }
     #design_text {
         grid-column: 2 / span 2;
-        text-align: center;
+        text-align: left;
         padding-top: 100px;
         padding-bottom: 100px;
     }
@@ -923,6 +951,12 @@ nav li a:hover {
     #form_title {
         padding-top: 100px;
         font-size: large;
+    }
+    #fb_img {
+        margin-top: 0px;
+    }
+    #insta_img {
+        margin-bottom: 0px;
     }
 }
 
