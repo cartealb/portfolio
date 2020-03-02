@@ -14,86 +14,78 @@
 
 <body>
     <a class="skip" href="#skip">Skip to Main Content</a>
-    <header>
-
-
-
-
-
-    </header>
-    <main id="skip">
+    <header class="grid-container">
         <button onclick="go_to_topFunction()" id="top_button" title="Go to top">&uarr;</button>
-        <div class="grid-container">
-            <div id='intro'>
-                <img id='me_pic' src='images/me.jpg' alt='Picture of AJ Carter' />
-                <div id='title_me'>
-                    <h1 id="me">Hi, I'm <span id="aj_h1">AJ Carter</span></h1>
-                </div>
 
+        <div id='intro'>
+            <img id='me_pic' src='images/me.jpg' alt='Picture of AJ Carter' />
+            <div id='title_me'>
+                <h1 id="me">Hi, I'm <span id="aj_h1">AJ Carter</span></h1>
             </div>
+        </div>
 
 
 
-
-            <nav id="nav_bar">
-                <ul>
-                    <li><a href="home.html" title="My skills and experience">Experience & Skills</a></li>
-                    <li><a href="about.html" title="Learn about me">Who am I?</a></li>
-                    <li><a href="designs.html" title="View my designs">Designs</a></li>
-                    <li><a href="contact.html" title="Contact AJ">Contact</a></li>
-
-
-                </ul>
-
-            </nav>
+        <nav id="nav_bar">
+            <ul>
+                <li><a href="home.html" title="My skills and experience">Experience & Skills</a></li>
+                <li><a href="about.html" title="Learn about me">Who am I?</a></li>
+                <li><a href="designs.html" title="View my designs">Designs</a></li>
+                <li><a href="contact.html" title="Contact AJ">Contact</a></li>
 
 
-            <div id='projects'>
-                <h1>Contact</h1>
-            </div>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main id="skip" class="grid-container">
+        <div id='projects'>
+            <h1>Contact</h1>
+        </div>
 
 
-            <div data-aos="fade-in" data-aos-duration="1200" id='social_media'>
+        <div data-aos="fade-in" data-aos-duration="1200" id='social_media'>
 
-                <div id='fb_img'>
-                    <img src='images/facebook.png' alt='Facebook Logo' />
-                </div>
-                <div id='linked_img'>
-                    <img src='images/linkedin.png' alt='LinkedIn Logo' />
-                </div>
-                <div id='insta_img'>
-                    <img src='images/instagram.png' alt='Instagram Logo' />
-                </div>
-
-
-            </div>
+            <a href='https://www.facebook.com/ajcarter276' id='fb_img' target="_blank">
+                <img src='images/facebook.png' alt='Facebook Logo' />
+            </a>
+            <a href='https://www.linkedin.com/in/aj-c-934b99111/' id='linked_img' target="_blank">
+                <img src='images/linkedin.png' alt='LinkedIn Logo' />
+            </a>
+            <a href='https://www.instagram.com/ajcarter276/' id='insta_img' target="_blank">
+                <img src='images/instagram.png' alt='Instagram Logo' />
+            </a>
 
 
-            <div data-aos="fade-in" data-aos-duration="1200" id='contact_form'>
+        </div>
 
 
-                <form action="https://formspree.io/mvoroqry" method="POST">
-                    <fieldset>
-                        <p id="form_title">Send me a message</p>
-                        <div class="form">
-                            <label for="name">Name:</label><input type="text" id="name" name="name" /><br>
-                            <label for="email">Email Address:</label><input type="text" id="email" name="email" /><br>
-                            <label for="addr">Message:</label><textarea id="addr" name="addr"></textarea>
-                            <input id='submit_button' type="submit" value="Submit Form" />
-                        </div>
+        <div data-aos="fade-in" data-aos-duration="1200" id='contact_form'>
 
-                    </fieldset>
-                </form>
 
-            </div>
+            <form action="https://formspree.io/mvoroqry" method="POST">
+                <fieldset>
+                    <p id="form_title">Send me a message</p>
+                    <div class="form">
+                        <label for="name">Name:</label><input type="text" id="name" name="name" /><br>
+                        <label for="email">Email Address:</label><input type="text" id="email" name="email" /><br>
+                        <label for="addr">Message:</label><textarea id="addr" name="addr"></textarea>
+                        <input id='submit_button' type="submit" value="Submit Form" />
+                    </div>
 
-            <footer>
-                <p>AJ Carter &copy;
-                    <script>
-                        document.write(new Date().getFullYear())
-                    </script>
-                </p>
-            </footer>
+                </fieldset>
+            </form>
+
+        </div>
+
+        <footer>
+            <p>AJ Carter &copy;
+                <script>
+                    document.write(new Date().getFullYear())
+                </script>
+            </p>
+        </footer>
 
         </div>
 
