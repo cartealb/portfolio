@@ -481,8 +481,11 @@ nav li a:hover {
     padding-top: 200px;
 }
 
-#projects {
-    padding-top: 215px;
+#projects,
+#designs,
+#about {
+    margin-top: 215px;
+    padding-top: 364px;
 }
 
 #web_text {
@@ -603,6 +606,12 @@ nav li a:hover {
     #designs,
     #about {
         padding-top: 275px;
+        z-index: 2;
+    }
+    #projects,
+    #designs,
+    #about {
+        margin-top: 315px;
     }
     #intro,
     #projects,
@@ -696,9 +705,6 @@ nav li a:hover {
     #about {
         border: none;
         border-bottom: #4285F5 solid;
-    }
-    #projects {
-        padding-top: 275px;
     }
     #me {
         font-size: 60px;
@@ -885,7 +891,7 @@ nav li a:hover {
         border-bottom: #4285F5 solid;
     }
     #projects {
-        padding-top: 275px;
+        margin-top: 275px;
     }
     #me {
         font-size: 60px;
