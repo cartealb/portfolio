@@ -525,6 +525,10 @@ nav li a:hover {
     grid-row: 1 / span 1;
 }
 
+ul {
+    padding-bottom: 23px;
+}
+
 .skills {
     padding-top: 50px;
 }
