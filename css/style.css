@@ -178,6 +178,7 @@ h2 {
     width: 250px;
     margin-top: 150px;
     background-color: #fff;
+    -webkit-animation: contact_alt_color 15s infinite;
     animation: contact_alt_color 15s infinite;
     padding-top: 0px;
     /* outer cyan */
@@ -186,8 +187,8 @@ h2 {
 @-webkit-keyframes contact_alt_color {
     0% {
         box-shadow: 0 0 60px 30px #fff, /* inner white */
-        0 0 100px 60px #4285F5, /* middle magenta */
-        0 0 140px 90px #EA4435;
+        0 0 100px 60px rgb(154, 95, 223), /* middle magenta */
+        0 0 140px 90px rgb(243, 0, 231);
     }
     25% {
         box-shadow: 0 0 60px 30px #fff, /* inner white */
@@ -197,17 +198,17 @@ h2 {
     50% {
         box-shadow: 0 0 60px 30px #fff, /* inner white */
         0 0 100px 60px #4285F5, /* middle magenta */
-        0 0 140px 90px #F9BB08;
+        0 0 140px 90px rgb(0, 34, 128);
     }
     75% {
         box-shadow: 0 0 60px 30px #fff, /* inner white */
-        0 0 100px 60px #EA4435, /* middle magenta */
-        0 0 140px 90px #32A452;
+        0 0 100px 60px rgb(5, 80, 64), /* middle magenta */
+        0 0 140px 90px rgb(251, 255, 0);
     }
     100% {
         box-shadow: 0 0 60px 30px #fff, /* inner white */
-        0 0 100px 60px #4285F5, /* middle magenta */
-        0 0 140px 90px #EA4435;
+        0 0 100px 60px rgb(154, 95, 223), /* middle magenta */
+        0 0 140px 90px rgb(243, 0, 231);
     }
 }
 
@@ -608,11 +609,14 @@ ul {
     background-image: url("music.jpg");
     background-position: center;
     background-size: cover;
+    -webkit-transition-duration: 1s;
     transition-duration: 1s;
+    -webkit-transition-timing-function: ease;
     transition-timing-function: ease;
 }
 
 .zoomGalIn:hover {
+    -webkit-transform: scale(1.2);
     transform: scale(1.2);
 }
 
@@ -643,6 +647,7 @@ ul {
 .flip-card {
     background-color: transparent;
     height: 600px;
+    -webkit-perspective: 4000px;
     perspective: 4000px;
     padding-top: 60px;
 }
@@ -652,7 +657,11 @@ ul {
     width: 100%;
     height: 100%;
     text-align: center;
+    -webkit-transition: -webkit-transform 0.6s;
+    transition: -webkit-transform 0.6s;
     transition: transform 0.6s;
+    transition: transform 0.6s, -webkit-transform 0.6s;
+    -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     padding-top: 0px;
     margin-top: auto;
@@ -660,6 +669,7 @@ ul {
 }
 
 .flip-card:hover .flip-card-inner {
+    -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
 }
 
@@ -678,8 +688,9 @@ ul {
 }
 
 .flip-card-back {
-    background-color: #4285F5;
-    color: white;
+    background-color: transparent;
+    color: black;
+    -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
 }
 
@@ -823,7 +834,9 @@ ul {
         margin-top: 200px;
     }
     .design_img:hover {
+        -webkit-transform: scale(1.1);
         transform: scale(1.1);
+        -webkit-filter: drop-shadow(2px 4px 6px black);
         filter: drop-shadow(2px 4px 6px black);
     }
     #web_text p,
@@ -1006,7 +1019,9 @@ ul {
         margin-top: 200px;
     }
     .design_img:hover {
+        -webkit-transform: scale(1.1);
         transform: scale(1.1);
+        -webkit-filter: drop-shadow(2px 4px 6px black);
         filter: drop-shadow(2px 4px 6px black);
     }
     #web_text p,
@@ -1057,6 +1072,10 @@ ul {
         -webkit-animation: none;
         animation: none;
         border-right: none;
+    }
+    #me_pic_card {
+        -webkit-animation: none;
+        animation: none;
     }
     #aj_h1 {
         -webkit-animation: none;
