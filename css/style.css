@@ -470,6 +470,7 @@ nav li a:hover {
     row-gap: 0px;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 23px;
 }
 
 #projects,
@@ -642,7 +643,6 @@ ul {
     #debug_img #learn_img,
     #people_img {
         grid-column: 2 / span 1;
-        padding-top: 23px;
     }
     #web_text,
     #ux_text,
