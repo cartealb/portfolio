@@ -512,7 +512,7 @@ nav li a:hover {
 #debug_text p,
 #learn_text p,
 #people_text p {
-    text-align: center;
+    text-align: left;
 }
 
 #spotistats {
