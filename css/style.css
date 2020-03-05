@@ -317,9 +317,6 @@ h2 {
     font-size: 25px;
 }
 
-
-/* Access! */
-
 a.skip {
     background: white;
     left: 0;
@@ -471,6 +468,7 @@ nav li a:hover {
     margin-left: auto;
     margin-right: auto;
     padding-top: 23px;
+    padding-bottom: 150px;
 }
 
 #projects,
@@ -601,6 +599,11 @@ ul {
 #design_text {
     grid-column: 2 / span 1;
     padding-top: 65px;
+}
+
+#debug_text,
+#web_text {
+    padding-top: 150px;
 }
 
 @media screen and (min-width:767px) {
