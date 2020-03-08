@@ -191,21 +191,21 @@ h2 {
 
 @-webkit-keyframes contact_alt_color {
     0% {
-        box-shadow: 0 0 60px 30px #fff, /* inner  */
+        box-shadow: 0 0 10px 10px #fff, /* inner  */
         0 0 100px 60px rgb(154, 95, 223), /* middle  */
-        0 0 140px 90px rgb(243, 0, 231);
+        0 0 50px 20px rgb(243, 0, 231);
     }
     25% {
-        box-shadow: 0 0 60px 30px #fff, 0 0 100px 60px #F9BB08, 0 0 140px 90px #32A452;
+        box-shadow: 0 0 10px 5px #fff, 0 0 100px 60px #F9BB08, 0 0 50px 20px #32A452;
     }
     50% {
-        box-shadow: 0 0 60px 30px #fff, 0 0 100px 60px #4285F5, 0 0 140px 90px rgb(0, 34, 128);
+        box-shadow: 0 0 10px 10px #fff, 0 0 100px 60px #4285F5, 0 0 50px 20px rgb(0, 34, 128);
     }
     75% {
-        box-shadow: 0 0 60px 30px #fff, 0 0 100px 60px rgb(5, 80, 64), 0 0 140px 90px rgb(251, 255, 0);
+        box-shadow: 0 0 20px 5px #fff, 0 0 100px 60px rgb(5, 80, 64), 0 0 50px 20px rgb(251, 255, 0);
     }
     100% {
-        box-shadow: 0 0 60px 30px #fff, 0 0 100px 60px rgb(154, 95, 223), 0 0 140px 90px rgb(243, 0, 231);
+        box-shadow: 0 0 10px 10px #fff, 0 0 100px 60px rgb(154, 95, 223), 0 0 50px 20px rgb(243, 0, 231);
     }
 }
 
