@@ -55,7 +55,7 @@ window.addEventListener('scroll', function(e) {
 });
 
 window.addEventListener('scroll', function(e) {
-    const target = document.querySelector('#nav_bar');
+    const target = document.querySelector('#message_404');
 
     let scrolled = window.pageYOffset;
     let rate = scrolled * 0.45;
