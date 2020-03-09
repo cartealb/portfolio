@@ -453,47 +453,55 @@ nav li a:hover {
     grid-row: 10 / span 1;
 }
 
-#about_text {
+#about_img {
     grid-row: 11 / span 1;
+    grid-column: 2/ span 1;
+    padding-top: 100px;
+    padding-bottom: 0px;
+    margin: 0 auto;
+}
+
+#about_text {
+    grid-row: 12 / span 1;
     grid-column: 2/ span 1;
     padding-top: 65px;
     font-size: 20px;
 }
 
 #debug_text {
-    grid-row: 12 / span 1;
-}
-
-#debug_img {
     grid-row: 13 / span 1;
 }
 
-#learn_text {
+#debug_img {
     grid-row: 14 / span 1;
 }
 
-#learn_img {
+#learn_text {
     grid-row: 15 / span 1;
 }
 
-#people_text {
+#learn_img {
     grid-row: 16 / span 1;
 }
 
-#people_img {
+#people_text {
     grid-row: 17 / span 1;
 }
 
-#designs {
+#people_img {
     grid-row: 18 / span 1;
 }
 
-#design_text {
+#designs {
     grid-row: 19 / span 1;
 }
 
-#mygal {
+#design_text {
     grid-row: 20 / span 1;
+}
+
+#mygal {
+    grid-row: 21 / span 1;
 }
 
 #web_img,
@@ -785,27 +793,37 @@ ul {
     #about {
         grid-row: 7 / span 1;
     }
-    #about_text {
+    #about_img {
         grid-row: 8 / span 1;
         grid-column: 2 / span 2;
         text-align: left;
         padding-top: 100px;
+        padding-bottom: 0px;
+        margin: 0 auto;
+    }
+    #about_img img {
+        width: 277px;
+    }
+    #about_text {
+        grid-row: 9 / span 1;
+        grid-column: 2 / span 2;
+        text-align: left;
+        padding-top: 100px;
         padding-bottom: 100px;
-        font-size: 20px;
         margin-left: 90px;
         margin-right: 90px;
     }
     #debug_text,
     #debug_img {
-        grid-row: 9 / span 1;
+        grid-row: 10 / span 1;
     }
     #learn_text,
     #learn_img {
-        grid-row: 10 / span 1;
+        grid-row: 11 / span 1;
     }
     #people_text,
     #people_img {
-        grid-row: 11 / span 1;
+        grid-row: 12 / span 1;
     }
     img {
         width: 215px;
@@ -984,8 +1002,19 @@ ul {
     #about {
         grid-row: 7 / span 1;
     }
-    #about_text {
+    #about_img {
         grid-row: 8 / span 1;
+        grid-column: 2 / span 2;
+        text-align: left;
+        padding-top: 100px;
+        padding-bottom: 0px;
+        margin: 0 auto;
+    }
+    #about_img img {
+        width: 277px;
+    }
+    #about_text {
+        grid-row: 9 / span 1;
         grid-column: 2 / span 2;
         text-align: left;
         padding-top: 100px;
@@ -996,15 +1025,15 @@ ul {
     }
     #debug_text,
     #debug_img {
-        grid-row: 9 / span 1;
+        grid-row: 10 / span 1;
     }
     #learn_text,
     #learn_img {
-        grid-row: 10 / span 1;
+        grid-row: 11 / span 1;
     }
     #people_text,
     #people_img {
-        grid-row: 11 / span 1;
+        grid-row: 12 / span 1;
     }
     img {
         width: 215px;
