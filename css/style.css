@@ -461,6 +461,10 @@ nav li a:hover {
     margin: 0 auto;
 }
 
+#about_img img {
+    width: 286px;
+}
+
 #about_text {
     grid-row: 12 / span 1;
     grid-column: 2/ span 1;
