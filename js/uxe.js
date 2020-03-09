@@ -54,10 +54,10 @@ window.addEventListener('scroll', function(e) {
     target.style.transform = 'translate3d(0px, ' + rate + 'px, 0px)';
 });
 
-window.addEventListener('scroll', function(e) {
-    const target = document.querySelector('#message_404');
+// window.addEventListener('scroll', function(e) {
+//     const target = document.querySelector('#message_404');
 
-    let scrolled = window.pageYOffset;
-    let rate = scrolled * 0.45;
-    target.style.transform = 'translate3d(0px, ' + rate + 'px, 0px)';
-});
+//     let scrolled = window.pageYOffset;
+//     let rate = scrolled * 0.45;
+//     target.style.transform = 'translate3d(0px, ' + rate + 'px, 0px)';
+// });
