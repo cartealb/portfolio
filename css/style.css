@@ -725,13 +725,13 @@ ul {
     #projects,
     #designs,
     #about {
-        padding-top: 275px;
+        padding-top: 0px;
         z-index: 2;
     }
     #projects,
     #designs,
     #about {
-        margin-top: 315px;
+        margin-top: 590px;
     }
     #intro,
     #projects,
@@ -930,12 +930,12 @@ ul {
 
 @media screen and (min-width:1680px) {
     #projects {
-        padding-top: 400px;
+        padding-top: 0px;
     }
     #projects,
     #designs,
     #about {
-        padding-top: 400px;
+        padding-top: 0px;
     }
     .grid-container {
         grid-template-columns: 1fr 2fr 2fr 1fr;
@@ -1058,7 +1058,7 @@ ul {
         border-bottom: #4285F5 solid;
     }
     #projects {
-        margin-top: 275px;
+        margin-top: 675px;
     }
     #me {
         font-size: 60px;
