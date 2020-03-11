@@ -535,8 +535,40 @@ nav li a:hover {
     grid-row: 20 / span 1;
 }
 
-#mygal {
+#UX_designs {
     grid-row: 21 / span 1;
+    color: #4285F5;
+    text-align: center;
+    grid-column: 2/ span 1;
+    padding-top: 150px;
+}
+
+#myUXgal {
+    grid-row: 22 / span 1;
+}
+
+#Geo_designs {
+    grid-row: 23 / span 1;
+    color: #4285F5;
+    text-align: center;
+    grid-column: 2/ span 1;
+    padding-top: 150px;
+}
+
+#myGeogal {
+    grid-row: 24 / span 1;
+}
+
+#Wal_designs {
+    grid-row: 25 / span 1;
+    color: #4285F5;
+    text-align: center;
+    grid-column: 2/ span 1;
+    padding-top: 150px;
+}
+
+#myWalgal {
+    grid-row: 26 / span 1;
 }
 
 #engin_img,
@@ -672,7 +704,9 @@ ul {
     transform: scale(1.2);
 }
 
-#mygal {
+#myUXgal,
+#myGeogal,
+#myWalgal {
     grid-column: 1/ span 4;
 }
 
@@ -965,6 +999,11 @@ ul {
     #insta_img {
         margin-bottom: 0px;
     }
+    #UX_designs,
+    #Geo_designs,
+    #Wal_designs {
+        grid-column: 2/ span 2;
+    }
 }
 
 @media screen and (min-width:1680px) {
@@ -1184,6 +1223,11 @@ ul {
     }
     #insta_img {
         margin-bottom: 0px;
+    }
+    #UX_designs,
+    #Geo_designs,
+    #Wal_designs {
+        grid-column: 2/ span 2;
     }
 }
 
