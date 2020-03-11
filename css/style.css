@@ -86,6 +86,12 @@ fieldset label {
     text-align: center;
 }
 
+#contact_form {
+    grid-column: 1/ span 3;
+    grid-row: 5 / span 1;
+    text-align: center;
+}
+
 #social_media {
     display: grid;
     grid-row: 6 / span 1;
@@ -588,6 +594,10 @@ nav li a:hover {
     grid-row: 31 / span 1;
 }
 
+#contact_form {
+    grid-row: 31 / span 1;
+}
+
 #social_media {
     grid-row: 32 / span 1;
 }
@@ -966,6 +976,10 @@ ul {
         grid-row: 31 / span 1;
         grid-column: 2/ span 2;
     }
+    #contact_form {
+        grid-row: 31 / span 1;
+        grid-column: 2/ span 2;
+    }
     #social_media {
         padding-top: 100px;
         grid-template-columns: 1fr 1fr 1fr;
@@ -1222,6 +1236,10 @@ ul {
         grid-column: 2/ span 2;
     }
     .contact_form {
+        grid-row: 31 / span 1;
+        grid-column: 2/ span 2;
+    }
+    #contact_form {
         grid-row: 31 / span 1;
         grid-column: 2/ span 2;
     }
