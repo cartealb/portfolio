@@ -481,8 +481,15 @@ nav li a:hover {
     grid-row: 12 / span 1;
 }
 
-#about_img {
+#about_text {
     grid-row: 13 / span 1;
+    grid-column: 2/ span 1;
+    padding-top: 65px;
+    font-size: 20px;
+}
+
+#about_img {
+    grid-row: 14 / span 1;
     grid-column: 2/ span 1;
     padding-top: 100px;
     padding-bottom: 0px;
@@ -496,79 +503,93 @@ nav li a:hover {
     padding-top: 0px;
 }
 
-#about_text {
-    grid-row: 12 / span 1;
-    grid-column: 2/ span 1;
-    padding-top: 65px;
-    font-size: 20px;
-}
-
 #debug_text {
-    grid-row: 13 / span 1;
-}
-
-#debug_img {
-    grid-row: 14 / span 1;
-}
-
-#learn_text {
     grid-row: 15 / span 1;
 }
 
-#learn_img {
+#debug_img {
     grid-row: 16 / span 1;
 }
 
-#people_text {
+#learn_text {
     grid-row: 17 / span 1;
 }
 
-#people_img {
+#learn_img {
     grid-row: 18 / span 1;
 }
 
-#designs {
+#people_text {
     grid-row: 19 / span 1;
 }
 
-#design_text {
+#people_img {
     grid-row: 20 / span 1;
 }
 
-#UX_designs {
+#designs {
     grid-row: 21 / span 1;
-    color: #4285F5;
-    text-align: center;
-    grid-column: 2/ span 1;
-    padding-top: 150px;
 }
 
-#myUXgal {
+#design_text {
     grid-row: 22 / span 1;
 }
 
-#Geo_designs {
+#UX_designs {
     grid-row: 23 / span 1;
-    color: #4285F5;
+    color: black;
     text-align: center;
     grid-column: 2/ span 1;
-    padding-top: 150px;
+    margin-top: 100px;
 }
 
-#myGeogal {
+#myUXgal {
     grid-row: 24 / span 1;
 }
 
-#Wal_designs {
+#Geo_designs {
     grid-row: 25 / span 1;
-    color: #4285F5;
+    color: black;
     text-align: center;
     grid-column: 2/ span 1;
-    padding-top: 150px;
+    margin-top: 200px;
+}
+
+#myGeogal {
+    grid-row: 26 / span 1;
+}
+
+#Wal_designs {
+    grid-row: 27 / span 1;
+    color: black;
+    text-align: center;
+    grid-column: 2/ span 1;
+    margin-top: 200px;
 }
 
 #myWalgal {
-    grid-row: 26 / span 1;
+    grid-row: 28 / span 1;
+}
+
+#contact {
+    text-align: center;
+    padding-top: 25px;
+    grid-column: 1 / span 3;
+    padding: 20px 25px;
+    border-bottom: #4285F5 solid;
+    grid-row: 29 / span 1;
+}
+
+#contact_photo {
+    grid-row: 30 / span 1;
+}
+
+#contact_form {
+    grid-row: 31 / span 1;
+}
+
+#social_media {
+    grid-row: 32 / span 1;
 }
 
 #engin_img,
@@ -781,13 +802,17 @@ ul {
     transform: rotateY(180deg);
 }
 
+#contact,
+#about,
+#designs {
+    margin-top: 150px;
+}
+
 @media screen and (min-width:800px) {
     .grid-container {
         grid-template-columns: 1fr 6fr 6fr 1fr;
     }
-    #projects,
-    #designs,
-    #about {
+    #projects {
         padding-top: 0px;
         z-index: 2;
     }
@@ -905,6 +930,48 @@ ul {
     #people_img {
         grid-row: 13 / span 1;
     }
+    #designs {
+        grid-row: 21 / span 1;
+    }
+    #design_text {
+        grid-row: 22 / span 1;
+    }
+    #UX_designs {
+        grid-row: 23 / span 1;
+    }
+    #myUXgal {
+        grid-row: 24 / span 1;
+    }
+    #Geo_designs {
+        grid-row: 25 / span 1;
+    }
+    #myGeogal {
+        grid-row: 26 / span 1;
+    }
+    #Wal_designs {
+        grid-row: 27 / span 1;
+    }
+    #myWalgal {
+        grid-row: 28 / span 1;
+    }
+    #contact {
+        grid-row: 29 / span 1;
+        grid-column: 2/ span 2;
+    }
+    #contact_photo {
+        grid-row: 30 / span 1;
+        grid-column: 2/ span 2;
+    }
+    #contact_form {
+        grid-row: 31 / span 1;
+        grid-column: 2/ span 2;
+    }
+    #social_media {
+        padding-top: 100px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-row: 32 / span 1;
+        grid-column: 2/ span 2;
+    }
     img {
         width: 215px;
     }
@@ -948,7 +1015,7 @@ ul {
     .design_img {
         width: 40%;
         margin: 50px;
-        margin-top: 200px;
+        margin-top: 100px;
     }
     .design_img:hover {
         -webkit-transform: scale(1.1);
@@ -979,30 +1046,25 @@ ul {
     #top_button:hover {
         background-color: rgba(238, 238, 238, 3.91);
     }
-    #contact_photo {
-        grid-row: 4 / span 1;
-        grid-column: 2/ span 2;
-    }
-    #contact_form {
-        grid-row: 5 / span 1;
-        grid-column: 2/ span 2;
-    }
-    #social_media {
-        padding-top: 100px;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-row: 6 / span 1;
-        grid-column: 2/ span 2;
-    }
     #form_title {
         font-size: large;
     }
     #insta_img {
         margin-bottom: 0px;
     }
-    #UX_designs,
+    #UX_designs {
+        grid-column: 2/ span 2;
+        margin-top: 100px;
+    }
     #Geo_designs,
     #Wal_designs {
         grid-column: 2/ span 2;
+        margin-top: 200px;
+    }
+    #contact,
+    #about,
+    #designs {
+        margin-top: 250px;
     }
 }
 
@@ -1127,6 +1189,48 @@ ul {
     #people_img {
         grid-row: 13 / span 1;
     }
+    #designs {
+        grid-row: 21 / span 1;
+    }
+    #design_text {
+        grid-row: 22 / span 1;
+    }
+    #UX_designs {
+        grid-row: 23 / span 1;
+    }
+    #myUXgal {
+        grid-row: 24 / span 1;
+    }
+    #Geo_designs {
+        grid-row: 25 / span 1;
+    }
+    #myGeogal {
+        grid-row: 26 / span 1;
+    }
+    #Wal_designs {
+        grid-row: 27 / span 1;
+    }
+    #myWalgal {
+        grid-row: 28 / span 1;
+    }
+    #contact {
+        grid-row: 29 / span 1;
+        grid-column: 2/ span 2;
+    }
+    #contact_photo {
+        grid-row: 30 / span 1;
+        grid-column: 2/ span 2;
+    }
+    #contact_form {
+        grid-row: 31 / span 1;
+        grid-column: 2/ span 2;
+    }
+    #social_media {
+        padding-top: 100px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-row: 32 / span 1;
+        grid-column: 2/ span 2;
+    }
     img {
         width: 215px;
     }
@@ -1170,7 +1274,7 @@ ul {
     .design_img {
         width: 35%;
         margin: 50px;
-        margin-top: 200px;
+        margin-top: 100px;
     }
     .design_img:hover {
         -webkit-transform: scale(1.1);
@@ -1201,20 +1305,6 @@ ul {
     #top_button:hover {
         background-color: rgba(238, 238, 238, 3.91);
     }
-    #contact_photo {
-        grid-row: 4 / span 1;
-        grid-column: 2/ span 2;
-    }
-    #contact_form {
-        grid-row: 5 / span 1;
-        grid-column: 2/ span 2;
-    }
-    #social_media {
-        padding-top: 100px;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-row: 6 / span 1;
-        grid-column: 2/ span 2;
-    }
     #form_title {
         font-size: large;
     }
@@ -1224,10 +1314,19 @@ ul {
     #insta_img {
         margin-bottom: 0px;
     }
-    #UX_designs,
+    #UX_designs {
+        grid-column: 2/ span 2;
+        margin-top: 0px;
+    }
     #Geo_designs,
     #Wal_designs {
         grid-column: 2/ span 2;
+        margin-top: 200px;
+    }
+    #contact,
+    #about,
+    #designs {
+        margin-top: 250px;
     }
 }
 
