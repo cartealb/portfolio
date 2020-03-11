@@ -80,7 +80,7 @@ fieldset label {
     grid-column: 1/ span 4;
 }
 
-#contact_form {
+.contact_form {
     grid-column: 1/ span 3;
     grid-row: 5 / span 1;
     text-align: center;
@@ -584,7 +584,7 @@ nav li a:hover {
     grid-row: 30 / span 1;
 }
 
-#contact_form {
+.contact_form {
     grid-row: 31 / span 1;
 }
 
@@ -962,7 +962,7 @@ ul {
         grid-row: 30 / span 1;
         grid-column: 2/ span 2;
     }
-    #contact_form {
+    .contact_form {
         grid-row: 31 / span 1;
         grid-column: 2/ span 2;
     }
@@ -1221,7 +1221,7 @@ ul {
         grid-row: 30 / span 1;
         grid-column: 2/ span 2;
     }
-    #contact_form {
+    .contact_form {
         grid-row: 31 / span 1;
         grid-column: 2/ span 2;
     }
