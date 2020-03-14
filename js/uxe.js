@@ -5,10 +5,14 @@ window.onscroll = function() {
 
 function ScrollFunction() {
 
-    if (document.body.scrollTop > 1200 || document.documentElement.scrollTop > 1200) {
-        document.getElementById('top_button').style.display = "block";
-    } else {
-        document.getElementById('top_button').style.display = "none";
+    if (window.matchMedia('(prefers-reduced-motion: no-preference)').matches) {
+        console.log(window.matchMedia('(prefers-reduced-motion: no-preference)').matches)
+
+        if (document.body.scrollTop > 1200 || document.documentElement.scrollTop > 1200) {
+            document.getElementById('top_button').style.display = "block";
+        } else {
+            document.getElementById('top_button').style.display = "none";
+        }
     }
 
 }
