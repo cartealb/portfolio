@@ -360,14 +360,19 @@
     }
     
     a.skip {
-        background: white;
-        left: 0;
+        left: 0px;
         padding: 6px;
         position: absolute;
         top: -40px;
         -webkit-transition: top 1s ease-out;
         transition: top 1s ease-out;
         z-index: 1;
+        text-decoration: none;
+        background-color: rgba(238, 238, 238, 0.46);
+        color: black;
+        padding: 10px;
+        border-radius: 2%;
+        font-size: 17px;
     }
     
     a.skip:focus {
