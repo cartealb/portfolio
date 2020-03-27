@@ -67,8 +67,8 @@ window.addEventListener('scroll', function(e) {
 // });
 
 document.addEventListener("DOMContentLoaded", function() {
-    var lazyImages = [].slice.call(document.querySelectorAll("img.design_img"));
-
+    var lazyImages = [].slice.call(document.querySelectorAll(".design_img"));
+    console.log(lazyImages)
     if ("IntersectionObserver" in window) {
         let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
             entries.forEach(function(entry) {
