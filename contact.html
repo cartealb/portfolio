@@ -66,20 +66,28 @@
         <div data-aos="fade-in" data-aos-duration="1200" id='contact_photo' class="flip-card" tabindex="0">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
-                    <img id='me_pic_card' src='images/AJ_pic.jpg' alt='Picture of AJ Carter in front of holiday lights' />
+                    <picture>
+                        <source srcset="images/AJ_pic.webp" type="image/webp">
+                        <source srcset="images/AJ_pic.heif" type="image/heif">
+                        <img class='me_pic_card' src='images/AJ_pic.jpg' alt='Picture of AJ Carter in front of holiday lights' />
+                    </picture>
                 </div>
                 <div class="flip-card-back">
-                    <img id='me_pic_card' src='images/aj_bubble.jpg' alt='Picture of AJ Carter blowing bubbles' />
+                    <picture>
+                        <source srcset="images/aj_bubble.webp" type="image/webp">
+                        <source srcset="images/aj_bubble.heif" type="image/heif">
+                        <img class='me_pic_card' src='images/aj_bubble.jpg' alt='Picture of AJ Carter blowing bubbles' />
+                    </picture>
                 </div>
             </div>
         </div>
 
-        <div data-aos="fade-in" data-aos-duration="1200" id='contact_form'>
+        <div data-aos="fade-in" data-aos-duration="1200" class='contact_form'>
 
 
             <form action="https://formspree.io/mvoroqry" method="POST">
                 <fieldset>
-                    <p id="form_title">Send me a message</p>
+                    <legend>Send me a message</legend>
                     <div class="form" id="contact_form">
                         <label for="name">Name:</label><input type="text" id="name" name="name" /><br>
                         <label for="email">Email Address:</label><input type="text" id="email" name="email" /><br>
@@ -95,10 +103,10 @@
 
 
 
-        <div data-aos="fade-in" data-aos-duration="1200" id='social_media'>
+        <div data-aos="fade-in " data-aos-duration="1200 " id='social_media'>
 
-            <a href='https://www.facebook.com/ajcarter276' id='fb_img' target="_blank">
-                <img src='images/facebook.png' alt='Facebook Logo' />
+            <a href="mailto:cartealb@umich.edu?Subject=Let's%20chat" target="_top" id='fb_img'>
+                <img src='images/email.png' alt='Email Logo' />
             </a>
             <a href='https://www.linkedin.com/in/aj-c-934b99111/' id='linked_img' target="_blank">
                 <img src='images/linkedin.png' alt='LinkedIn Logo' />
