@@ -131,7 +131,7 @@
     }
     
     footer {
-        grid-row: 50 / span 1;
+        grid-row: 140 / span 1;
         padding-top: 50px;
         grid-column: 1 / span 4;
         margin-top: 200px;
@@ -276,7 +276,8 @@
     }
     
     #people_person,
-    #research_h2 {
+    #research_h2,
+    #PG_h2 {
         color: #EA4435
     }
     
@@ -399,6 +400,8 @@
     #projects,
     #web_img,
     #web_text,
+    #PG_text,
+    #PG_img,
     #engin_text,
     #engin_img,
     #ux_text,
@@ -446,36 +449,44 @@
         grid-row: 3 / span 1;
     }
     
-    #engin_text {
+    #PG_text {
         grid-row: 4 / span 1;
     }
     
-    #engin_img {
+    #PG_img {
         grid-row: 5 / span 1;
     }
     
+    #engin_text {
+        grid-row: 40 / span 1;
+    }
+    
+    #engin_img {
+        grid-row: 50 / span 1;
+    }
+    
     #web_text {
-        grid-row: 6 / span 1;
+        grid-row: 60 / span 1;
     }
     
     #web_img {
-        grid-row: 7 / span 1;
+        grid-row: 70 / span 1;
     }
     
     #ux_text {
-        grid-row: 8 / span 1;
+        grid-row: 80 / span 1;
     }
     
     #ux_img {
-        grid-row: 9 / span 1;
+        grid-row: 90 / span 1;
     }
     
     #research_text {
-        grid-row: 10 / span 1;
+        grid-row: 100 / span 1;
     }
     
     #research_img {
-        grid-row: 11 / span 1;
+        grid-row: 110 / span 1;
     }
     
     #about {
@@ -593,6 +604,7 @@
         grid-row: 32 / span 1;
     }
     
+    #PG_img,
     #engin_img,
     #web_img,
     #ux_img,
@@ -625,6 +637,10 @@
     
     #web_text {
         padding-top: 20px;
+    }
+    
+    #PG_h2 {
+        text-align: center;
     }
     
     #intro,
@@ -738,6 +754,7 @@
     
     #web_text,
     #ux_text,
+    #engin_text,
     #research_text,
     #debug_text,
     #learn_text,
@@ -748,7 +765,7 @@
     }
     
     #debug_text,
-    #engin_text {
+    #PG_text {
         padding-top: 150px;
     }
     
@@ -851,6 +868,7 @@
         #people_img {
             grid-column: 2 / span 1;
         }
+        #PG_text,
         #engin_text,
         #web_text,
         #ux_text,
@@ -869,6 +887,7 @@
             margin-left: 90px;
             margin-right: 90px;
         }
+        #PG_img,
         #engin_img,
         #web_img,
         #ux_img,
@@ -880,21 +899,25 @@
             padding-top: 130px;
             grid-column: 2 / span 1;
         }
+        #PG_img,
+        #PG_text {
+            grid-row: 4 / span 1;
+        }
         #engin_img,
         #engin_text {
-            grid-row: 4 / span 1;
+            grid-row: 40 / span 1;
         }
         #web_img,
         #web_text {
-            grid-row: 5 / span 1;
+            grid-row: 50 / span 1;
         }
         #ux_img,
         #ux_text {
-            grid-row: 6 / span 1;
+            grid-row: 60 / span 1;
         }
         #research_text,
         #research_img {
-            grid-row: 7 / span 1;
+            grid-row: 70 / span 1;
         }
         #about {
             grid-row: 8 / span 1;
@@ -1033,7 +1056,7 @@
             text-align: left;
         }
         footer {
-            grid-row: 40 / span 1;
+            grid-row: 400 / span 1;
         }
         nav {
             grid-column: 2/ span 2;
@@ -1107,6 +1130,7 @@
         #people_img {
             grid-column: 2 / span 1;
         }
+        #PG_text,
         #engin_text,
         #web_text,
         #ux_text,
@@ -1127,6 +1151,7 @@
             margin-right: 90px;
             font-size: 20px;
         }
+        #PG_img,
         #engin_img,
         #web_img,
         #ux_img,
@@ -1138,21 +1163,25 @@
             padding-top: 130px;
             grid-column: 2 / span 1;
         }
+        #PG_img,
+        #PG_text {
+            grid-row: 4 / span 1;
+        }
         #engin_img,
         #engin_text {
-            grid-row: 4 / span 1;
+            grid-row: 40 / span 1;
         }
         #web_img,
         #web_text {
-            grid-row: 5 / span 1;
+            grid-row: 50 / span 1;
         }
         #ux_img,
         #ux_text {
-            grid-row: 6 / span 1;
+            grid-row: 60 / span 1;
         }
         #research_text,
         #research_img {
-            grid-row: 7 / span 1;
+            grid-row: 7 0/ span 1;
         }
         #about {
             grid-row: 8 / span 1;
@@ -1292,7 +1321,7 @@
             text-align: left;
         }
         footer {
-            grid-row: 40 / span 1;
+            grid-row: 400 / span 1;
         }
         nav {
             grid-column: 2/ span 2;
