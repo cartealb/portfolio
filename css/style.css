@@ -559,7 +559,7 @@
         grid-row: 24 / span 1;
     }
     
-    #Geo_designs {
+    #Creative_designs {
         grid-row: 25 / span 1;
         color: black;
         text-align: center;
@@ -567,11 +567,11 @@
         margin-top: 200px;
     }
     
-    #myGeogal {
+    #myCreativegal {
         grid-row: 26 / span 1;
     }
     
-    #Wal_designs {
+    #Geo_designs {
         grid-row: 27 / span 1;
         color: black;
         text-align: center;
@@ -579,8 +579,20 @@
         margin-top: 200px;
     }
     
-    #myWalgal {
+    #myGeogal {
         grid-row: 28 / span 1;
+    }
+    
+    #Wal_designs {
+        grid-row: 29 / span 1;
+        color: black;
+        text-align: center;
+        grid-column: 2/ span 1;
+        margin-top: 200px;
+    }
+    
+    #myWalgal {
+        grid-row: 30 / span 1;
     }
     
     #contact {
@@ -743,6 +755,7 @@
     }
     
     #myUXgal,
+    #myCreativegal,
     #myGeogal,
     #myWalgal {
         grid-column: 1/ span 4;
@@ -966,17 +979,24 @@
         #myUXgal {
             grid-row: 24 / span 1;
         }
-        #Geo_designs {
+        #Creative_designs {
             grid-row: 25 / span 1;
+            grid-column: 2/ span 2;
         }
-        #myGeogal {
+        #myCreativegal {
             grid-row: 26 / span 1;
         }
-        #Wal_designs {
+        #Geo_designs {
             grid-row: 27 / span 1;
         }
-        #myWalgal {
+        #myGeogal {
             grid-row: 28 / span 1;
+        }
+        #Wal_designs {
+            grid-row: 29 / span 1;
+        }
+        #myWalgal {
+            grid-row: 30 / span 1;
         }
         #contact {
             grid-row: 29 / span 1;
@@ -1231,17 +1251,23 @@
         #myUXgal {
             grid-row: 24 / span 1;
         }
-        #Geo_designs {
+        #Creative_designs {
             grid-row: 25 / span 1;
         }
-        #myGeogal {
+        #myCreativegal {
             grid-row: 26 / span 1;
         }
-        #Wal_designs {
+        #Geo_designs {
             grid-row: 27 / span 1;
         }
-        #myWalgal {
+        #myGeogal {
             grid-row: 28 / span 1;
+        }
+        #Wal_designs {
+            grid-row: 29 / span 1;
+        }
+        #myWalgal {
+            grid-row: 30 / span 1;
         }
         #contact {
             grid-row: 29 / span 1;
@@ -1349,9 +1375,11 @@
             margin-top: 0px;
         }
         #Geo_designs,
-        #Wal_designs {
+        #Wal_designs,
+        #Creative_designs {
             grid-column: 2/ span 2;
             margin-top: 200px;
+            text-align: center;
         }
         #contact,
         #about,
