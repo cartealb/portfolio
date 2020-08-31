@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta prefix="og: http://ogp.me/ns#" property='og:title' content="AJ's Personal Portfolio" />
+    <meta prefix="og: http://ogp.me/ns#" property='og:image' content="https://ajcarter.me/images/web_pic.jpg">
+    <meta prefix="og: http://ogp.me/ns#" property='og:description' content="A website created from scratch (with HTML, CSS, and JavaScript) which displays AJ's work and designs." />
+    <meta prefix="og: http://ogp.me/ns#" property='og:url' content="https://ajcarter.me/" />
+
+    <link rel="shortcut icon" type="image/jpg" href="images/aj_bubble.jpg" />
+
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159861675-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-159861675-1');
+
+        Image1 = new Image();
+        Image1.src = "images/me.jpg";
+    </script>
+
+    <title>AJ Carter</title>
+</head>
+
+<body>
+    <a class="skip" href="#skip">Skip to Main Content</a>
+
+
+
+
+
+
+
+
+    <header class="grid-container">
+        <button onclick="go_to_topFunction()" id="top_button" title="Go to top">&uarr;</button>
+
+        <div id='intro'>
+            <picture>
+                <source srcset="images/me.webp" type="image/webp">
+                <source srcset="images/me.heif" type="image/heif">
+                <img id='me_pic' src='images/me.jpg' alt='Picture of AJ Carter' />
+            </picture>
+            <div id='title_me'>
+                <h1 id="me">Hi, I'm <span id="aj_h1">AJ Carter</span></h1>
+            </div>
+        </div>
+
+
+
+        <nav id="nav_bar">
+            <ul>
+                <li><a aria-current="page" href="index.html#projects" title="My skills and experience">Experience & Skills</a></li>
+                <li><a href="about.html#about" title="Learn about me">Who am I?</a></li>
+                <li><a href="projects.html#projects" class='nav_active' title="View my designs">Projects</a></li>
+                <li><a href="designs.html#designs" title="View my designs">Designs</a></li>
+                <li><a href="contact.html#contact" title="Contact AJ">Contact</a></li>
+
+
+            </ul>
+
+        </nav>
+    </header>
+
+    <main id="skip" class="grid-container">
+        <div id='projects'>
+            <h1>Projects</h1>
+        </div>
+
+        <div data-aos="fade-in" data-aos-duration="1200" id='PG_text'>
+
+            <h2 id="PG_h2">Discover International Student Loan Application</h2>
+            <h3 class='skills'>Problem: </h3>
+            <p>The application process acts as a barrier for international students to apply for loans they need to study abroad.</p>
+            <br>
+            <h3 class='skills'>Solution: </h3>
+            <p>Create an gamified loan application with a modern design. Allow users to import personal information using Government issued Digital ID.</p>
+
+            <h3 class='skills'>Skills</h3>
+            <ul>
+                <li>Developing a high-fidelity and interactive wireframe in Adobe XD.</li>
+                <li>Working with a client to understand project goals.</li>
+                <li>Implementing and iterating design choices to address client needs.</li>
+                <li class="text_then_button">Applying UX and Interaction Design concepts</li>
+
+            </ul>
+
+            <a class="button" href="https://xd.adobe.com/view/ae679290-d2f3-4ed7-483c-cd8096cbad33-d856/?fullscreen" target="_blank">View Wireframe</a>
+
+
+            <!-- <h3 class='skills'>Skills</h3>
+            <ul>
+                <li>Service Management</li>
+                <li>Communication with customer and ne skills</li>
+
+            </ul> -->
+            <span class='spotistats'></span>
+            <!-- <a class="button" href="https://spotistats.pw" target="_blank">See more</a> -->
+
+        </div>
+        <div id='PG_img'>
+            <a href="https://xd.adobe.com/view/ae679290-d2f3-4ed7-483c-cd8096cbad33-d856/?fullscreen"><img src='images/discover.png' alt='Discover loan application screen grab' /></a>
+        </div>
+
+        <div data-aos="fade-in" data-aos-duration="1200" id='engin_text'>
+
+            <h2 id="engin_h2">Spoti Stats</h2>
+
+            <h3 class='skills'>Problem: </h3>
+            <p>Users listen to music on Spotify but have to wait till the end of the year for Spotify Wrapped to view listening trends.</p>
+            <br>
+            <h3 class='skills'>Solution: </h3>
+            <p>Use the Spotify API to pull user listen data and Django Framework to create a web app where users can check listening trends all year round.</p>
+
+            <h3 class='skills'>Skills</h3>
+            <ul>
+                <li>HTML/CSS/JavaScript experience.</li>
+                <li>Developing web applications using Django framework.</li>
+                <li>Experience working with APIs.</li>
+                <li class="text_then_button">Implementing web accessibility from the start of a project.</li>
+            </ul>
+
+            <a class="button" href="https://spotistats.pw" target="_blank">Spoti Stats Web App</a>
+
+            <span class='spotistats'></span>
+            <!-- <a class="button" href="https://spotistats.pw" target="_blank">See more</a> -->
+
+        </div>
+        <div id='engin_img'>
+            <img src='images/spoti_stats_logo.png' alt='Spoti Stats Logo' />
+        </div>
+
+
+        <div data-aos="fade-in" data-aos-duration="1200" id='web_text'>
+
+            <h2 id="web_dev_h2">P&G Web Development</h2>
+
+
+
+            <h3 class='skills'>Problem: </h3>
+            <p>The Market Measurements website contained several critical usability issues. Many users were confused on navigation and how to access needed resources. The website took about 10 hours to update content, leading to lots of stale content.
+            </p>
+            <br>
+            <h3 class='skills'>Solution: </h3>
+            <p>Leveraging design thinking, I was able to create a new Market Measurements website that was designed with the user first. I used card sorting to restructure the site architecture and usability testing to validate design choices.
+            </p>
+
+            <h3 class='skills'>Skills</h3>
+            <ul>
+                <li>Logo creation following company design guidelines</li>
+                <li>Iterating and testing across designs</li>
+                <li>Communicating usability report with leadership</li>
+                <li class="text_then_button">Creating extensive documentation for future maintaince</li>
+            </ul>
+            <span class='spotistats'></span>
+            <a class="button" href="https://spotistats.pw" target="_blank">Spoti Stats Web App</a>
+
+        </div>
+        <div id='web_img'>
+            <img src='images/PG.png' alt='Procter and Gamble Logo' />
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <footer>
+            <p>AJ Carter &copy;
+                <script>
+                    document.write(new Date().getFullYear())
+                </script>
+            </p>
+        </footer>
+
+
+
+    </main>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js "></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js "></script>
+
+    <script>
+        AOS.init({
+            disable: function() {
+                var val = window.matchMedia('(prefers-reduced-motion: reduce)');
+                return val.matches;
+            }
+        });
+    </script>
+
+    <script src="js/uxe.js "></script>
+
+
+
+
+</body>

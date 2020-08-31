@@ -146,6 +146,10 @@
         padding-top: 0px;
     }
     
+    .text_then_button {
+        padding-bottom: 56px;
+    }
+    
     .spotistats {
         padding-top: 30px;
     }
