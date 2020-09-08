@@ -27,8 +27,18 @@
         background-color: rgba(238, 238, 238, 0.46);
         color: black;
         padding: 10px;
+        margin-top: 20px;
         border-radius: 2%;
         font-size: 17px;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.20);
+    }
+    
+    .button:hover {
+        box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.20);
+    }
+    
+    .button:active {
+        box-shadow: none;
     }
     
     #top_button {
