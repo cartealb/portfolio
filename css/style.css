@@ -205,10 +205,13 @@
         width: 250px;
         margin-top: 150px;
         background-color: #fff;
-        -webkit-animation: contact_alt_color 15s infinite;
-        animation: contact_alt_color 15s infinite;
         padding-top: 0px;
-        /* outer cyan */
+    }
+    
+    .circle_pic {
+        border-radius: 50%;
+        width: 250px;
+        background-color: #fff;
     }
     
     @-webkit-keyframes contact_alt_color {
@@ -897,6 +900,11 @@
         #PG_h2 {
             grid-column: 3 / span 1;
             text-align: left;
+        }
+        #debug_text,
+        #learn_text,
+        #people_text,
+        {
             padding-top: 100px;
         }
         #design_text {
@@ -1167,6 +1175,11 @@
         #people_text {
             grid-column: 3 / span 1;
             text-align: left;
+        }
+        #debug_text,
+        #learn_text,
+        #people_text,
+        {
             padding-top: 100px;
         }
         #design_text {
